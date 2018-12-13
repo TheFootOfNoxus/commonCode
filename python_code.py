@@ -69,8 +69,8 @@ def today_timestamp():
     当日0点时间戳
     :return:
     """
-    now = datetime.datetime.utcfromtimestamp(now_timestamp - now_timestamp % 86400)
-    return now
+    today_time = int(time.mktime(datetime.date.today().timetuple()))
+    return today_time
 
 def last_week_timestamp():
     """
