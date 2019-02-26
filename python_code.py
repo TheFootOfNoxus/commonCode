@@ -105,3 +105,16 @@ def check_contain_chinese(check_str):
         if u'\u4e00' <= ch <= u'\u9fff':
             return True
     return False
+
+def get_two_dimension():
+    """
+    获取二维数组中指定的值,放到列表中
+    :return:
+    """
+    must_hit_card = [{'card_id': 16}, {'card_id': 18}]
+    # 获取
+    card_id = map(lambda x: x.get('card_id'), must_hit_card)
+    print(card_id)
+    """
+    输出:[16, 18]
+    """
