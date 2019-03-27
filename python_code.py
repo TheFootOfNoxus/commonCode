@@ -118,3 +118,13 @@ def get_two_dimension():
     """
     输出:[16, 18]
     """
+
+def join_int_list():
+    """
+    join连接数字列表
+    :return:
+    """
+    print ','.join('%s' % id for id in ls)
+    """
+    1,2,3
+    """
